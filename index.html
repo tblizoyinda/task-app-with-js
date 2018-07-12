@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Task List</title>
+</head>
+<body>
+
+    <style type="text/css">
+        .delete{
+            margin-left: 2% !important;
+            float:right !important;
+        }
+        .delete:hover{
+            color:brown !important;
+            cursor: pointer;
+        }
+    </style>
+
+    <div class="container" style="margin-top:3%;">
+        <div class="row">
+            <div class="col">
+                <div id="main" class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Task List</h4>
+
+                        <div class="col">
+                            <form id="task-form">
+                                <div class="form-group">
+                                    <label for="task">Email address</label>
+                                    <input type="text" class="form-control" id="task" name="task" placeholder="Enter new task">
+                                    <br>
+                                    <button type="button" class="btn btn-primary" id="btn-add">Add Task</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col">
+                            <h5 id="task-title">Tasks</h5>
+                            <div class="col">
+                                <input type="text" class="form-control col-4" name="filter" id="filter" placeholder="Enter keywords to filter task list......">
+                            </div>
+                            <ul class="list-group" style="margin-bottom: 2%; margin-top: 2%;"></ul>
+                            <a href="#" class="clear-tasks btn btn-danger">Clear Tasks</a> 
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script src="app.js"></script>
+</body>
+</html>
